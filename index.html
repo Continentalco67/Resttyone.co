@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>เว็บโชว์คลิป YouTube</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+    #content {
+      display: none;
+      margin-top: 20px;
+    }
+    iframe {
+      width: 80%;
+      max-width: 560px;
+      height: 315px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>กดปุ่มเพื่อดูคลิปสำคัญ!!!</h1>
+  <button onclick="showContent()">กดที่นี่</button>
+
+  <div id="content">
+    <p>มึงพลาดละ ไอฟายย</p>
+    <iframe src="https://www.youtube.com/embed/54p6wsFT8s0" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <script>
+    function showContent() {
+      document.getElementById("content").style.display = "block";
+    }
+  </script>
+</body>
+</html>
